@@ -1,122 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login and Sign-Up Form</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f5f5f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            width: 400px;
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .container h1 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #333;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-        label {
-            margin: 10px 0 5px;
-            color: #333;
-        }
-        input {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            outline: none;
-        }
-        button {
-            padding: 10px;
-            background: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            margin-top: 20px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        button:hover {
-            background: #0056b3;
-        }
-        .toggle-link {
-            margin-top: 15px;
-            text-align: center;
-            color: #007bff;
-            cursor: pointer;
-        }
-        .toggle-link:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Video Playback</title>
 </head>
 <body>
-    <div class="container">
-        <h1 id="form-title">Login</h1>
-        <form id="auth-form">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password" required>
-            
-            <div id="name-field" style="display: none;">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your full name">
-            </div>
-            
-            <button type="submit" id="submit-button">Login</button>
-        </form>
-        <div class="toggle-link" id="toggle-link">Don't have an account? Sign up here.</div>
-    </div>
-
-    <script>
-        const formTitle = document.getElementById('form-title');
-        const authForm = document.getElementById('auth-form');
-        const nameField = document.getElementById('name-field');
-        const submitButton = document.getElementById('submit-button');
-        const toggleLink = document.getElementById('toggle-link');
-        
-        let isSignUp = false;
-
-        toggleLink.addEventListener('click', () => {
-            isSignUp = !isSignUp;
-            if (isSignUp) {
-                formTitle.textContent = "Sign Up";
-                nameField.style.display = "block";
-                submitButton.textContent = "Sign Up";
-                toggleLink.textContent = "Already have an account? Login here.";
-            } else {
-                formTitle.textContent = "Login";
-                nameField.style.display = "none";
-                submitButton.textContent = "Login";
-                toggleLink.textContent = "Don't have an account? Sign up here.";
-            }
-        });
-
-        authForm.addEventListener('submit', (e) => {
-            e.preventDefault(); // Prevent page reload on form submit
-            if (isSignUp) {
-                alert("Sign-Up Successful! (Add backend logic here)");
-            } else {
-                alert("Login Successful! (Add backend logic here)");
-            }
-        });
-    </script>
-</body>
-</html>
+    <h1>Watch Video</h1>
+    <video controls width="640" height="360">
+        <source src="https://www.dropbox.com/scl/fi/87aolbm9uriohn4yrq9yh/1130.mp4?rlkey=cvjj9tjgijky2lyrezuipl3pg&st=xtjtt1yq&raw=1" type="video/mp4">
+    </video>
+    <h1>Hello, World!</h1>
+    <h7>MY CREATION</h7>
+    <p>MY FIRST WEBSITE.</p>
+    <img src="https://i.imgur.com/HhyvyV7.jpeg" alt="this is salman khan father of bollywood">
+    <a href="https://www.bing.com/images/search?q=sallu+bhai&form=HDRSC3&first=1">click kar bsdk mene banya dekh le ye</a>.
+    <audio controls>
+        <source src="AEVideoToAudio1732558092899.m4a" type="audio/mpeg">
+    </audio>
+    </body>
